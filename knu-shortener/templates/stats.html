@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html class="bg-gray-900 text-white">
+<head><title>Stats • {{ code }}</title><script src="https://cdn.tailwindcss.com"></script></head>
+<body class="min-h-screen flex items-center justify-center">
+  <div class="bg-gray-800 rounded-2xl p-10 max-w-2xl w-full text-center">
+    <h1 class="text-4xl font-bold mb-6">Link Stats</h1>
+    <div class="space-y-6 text-xl">
+      <p>Short: <code class="bg-black px-4 py-2 rounded">{{ short }}</code></p>
+      <p>Original: <span class="break-all text-purple-400">{{ url }}</span></p>
+      <p class="text-5xl font-black text-green-400">{{ clicks }} clicks</p>
+    </div>
+    <a href="/" class="mt-10 inline-block bg-purple-600 hover:bg-purple-700 px-8 py-4 rounded-xl text-xl">← Shorten another</a>
+  </div>
+</body>
+</html>

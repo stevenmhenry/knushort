@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html class="h-full bg-gray-900 text-white">
+<head>
+  <meta charset="utf-8">
+  <title>s.knu.day – URL Shortener</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="h-full flex items-center justify-center">
+  <div class="max-w-lg w-full bg-gray-800 rounded-2xl p-10 text-center shadow-2xl">
+    <h1 class="text-5xl font-black mb-4">s.knu.day</h1>
+    <p class="text-xl mb-8 text-gray-400">Short links. Big impact.</p>
+    <form action="/create" method="post" class="space-y-6">
+      <input name="url" type="url" required placeholder="https://your-long-url.com" 
+             class="w-full px-6 py-4 bg-black rounded-xl text-xl focus:outline-none focus:ring-4 focus:ring-purple-600">
+      <button class="w-full bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 py-5 rounded-xl text-2xl font-bold transition">
+        Shorten URL
+      </button>
+    </form>
+    <p class="mt-8 text-sm text-gray-500">Free • No signup • Stats included</p>
+  </div>
+</body>
+</html>
